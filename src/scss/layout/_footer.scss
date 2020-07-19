@@ -1,0 +1,30 @@
+.footer {
+  height: rem(100);
+  background-color: $color-dark;
+  color: $color-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  & .list__icons {
+    margin: 0;
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+    }
+
+    & li {
+      margin-bottom: rem(5);
+
+      @include tablet {
+        margin-right: rem(20);
+      }
+    }
+  }
+  &__copy {
+    & .fas {
+      color: red;
+    }
+  }
+}

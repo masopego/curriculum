@@ -1,0 +1,28 @@
+.title {
+  color: $color-dark;
+
+  &--main {
+    font-size: rem(30);
+    color: $color-light;
+
+    @include tablet {
+      font-size: rem(50);
+      color: $color-dark;
+    }
+    @include display {
+      font-size: rem(75);
+    }
+  }
+  &--secondary {
+    font-weight: 100;
+    color: $color-light;
+
+    @include tablet {
+      color: $color-dark;
+    }
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

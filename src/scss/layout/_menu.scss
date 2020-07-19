@@ -1,0 +1,21 @@
+.social__menu {
+  background-color: $color-dark;
+  color: $color-light;
+  padding: rem(20) 0;
+
+  .social__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    & span {
+      display: none;
+
+      @include tablet {
+        margin-left: rem(5);
+        display: inline-block;
+      }
+    }
+  }
+}
