@@ -6,15 +6,15 @@
     color: $color-light;
 
     @include tablet {
-      font-size: rem(50);
+      font-size: rem(40);
       color: $color-dark;
     }
     @include display {
-      font-size: rem(75);
+      font-size: rem(60);
     }
   }
   &--secondary {
-    font-weight: 100;
+    font-weight: 300;
     color: $color-light;
 
     @include tablet {
