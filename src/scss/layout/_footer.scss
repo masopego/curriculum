@@ -8,22 +8,20 @@
   align-items: center;
 
   & .list__icons {
-    @include tablet {
-      display: flex;
-      flex-direction: row;
-    }
+    display: flex;
+    flex-direction: row;
 
     & li {
-      margin-bottom: rem(5);
-
-      @include tablet {
-        margin-right: rem(20);
-      }
+      margin: rem(10) rem(20) 0;
     }
   }
   &__copy {
     & .fas {
       color: red;
     }
+  }
+
+  &__reference {
+    font-size: rem(10);
   }
 }

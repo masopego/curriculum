@@ -15,9 +15,18 @@
   }
   &--secondary {
     font-weight: 300;
+    font-size: $font-large;
+  }
+  &--tertiary {
+    // font-size: $font-regular;
   }
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.small {
+  font-size: $font-small;
+  line-height: rem(25);
 }

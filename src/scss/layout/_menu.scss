@@ -9,6 +9,11 @@
     justify-content: space-around;
     align-items: center;
 
+    @include tablet {
+      justify-content: space-between;
+      margin: 0 rem(30);
+    }
+
     & span {
       display: none;
 
