@@ -8,7 +8,6 @@
   align-items: center;
 
   & .list__icons {
-    margin: 0;
     @include tablet {
       display: flex;
       flex-direction: row;

@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: rem(30);
-  margin-right: rem(30);
+  margin: rem(30);
   @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -12,12 +11,55 @@
   &__firstcolumn {
     @include tablet {
       grid-column: 1/2;
+      margin-right: rem(30);
+      height: 100%;
     }
   }
 
   &__secondcolumn {
     @include tablet {
       grid-column: 2/3;
+      height: 100%;
+    }
+  }
+
+  // Títulos
+
+  .title--secondary {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(20);
+    .fa-circle {
+      color: $color-main;
+      font-size: $font-small;
+      margin-right: rem(10);
+    }
+  }
+}
+
+// Habilidades
+
+.skills {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: rem(30);
+
+    &--items {
+      padding: rem(7) rem(15);
+      border-radius: rem(5);
+      margin-bottom: rem(20);
+      margin-right: rem(20);
+    }
+    & .item {
+      background-color: $color-main;
+      color: $color-dark;
+    }
+    & .item2 {
+      background-color: $color-dark;
+      color: $color-light;
     }
   }
 }

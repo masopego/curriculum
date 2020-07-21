@@ -130,8 +130,10 @@
     }
 
     .title--secondary {
-      & span {
-        @include tablet {
+      color: $color-light;
+      @include tablet {
+        color: $color-dark;
+        & span {
           display: block;
         }
       }
