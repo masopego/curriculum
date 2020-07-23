@@ -134,6 +134,10 @@
 
   & .fa-link {
     font-size: $font-small;
+    transition: color 0.5s ease-in;
+    &:hover {
+      color: $color-tertiary;
+    }
   }
 }
 

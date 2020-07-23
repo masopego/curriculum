@@ -13,6 +13,13 @@
 
     & li {
       margin: rem(10) rem(20) 0;
+
+      a {
+        transition: color 0.5s ease-in;
+        &:hover {
+          color: $color-tertiary;
+        }
+      }
     }
   }
   &__copy {
