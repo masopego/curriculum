@@ -6,6 +6,38 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+
+  .download-pdf {
+    background-color: $color-main;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: rem(10);
+    height: 50px;
+    width: 40px;
+    transition: width 0.5s linear;
+    display: flex;
+    align-items: center;
+    &:hover {
+      width: 160px;
+      justify-content: space-around;
+
+      span {
+        animation-name: pdf-default;
+        animation-duration: 1s;
+        animation-timing-function: 1;
+        opacity: 1;
+      }
+    }
+
+    i {
+      font-size: 1.5rem;
+    }
+    span {
+      display: inline-block;
+      opacity: 0;
+    }
+  }
   & .image {
     position: absolute;
     z-index: 999;
@@ -163,5 +195,23 @@
   }
   to {
     transform: translate(rem(0), rem(0));
+  }
+}
+
+@keyframes pdf-default {
+  0% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.25;
+  }
+  95% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
   }
 }
